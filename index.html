@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playing Port Authority</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans:900,700,800,400,300);
+      body {
+        font-family: 'Open Sans';
+        color: #efefef;
+      }
+      a:link, a:visited, a:hover, a:active {
+        color: #efefef;
+      }
+      .remark-slide-content {
+        background-color: black;
+      }
+      h1, h2, h3 {
+        font-family: 'Open Sans';
+        font-weight: 900;
+        letter-spacing: -0.05em;
+        text-shadow: 2px 2px #121212;
+      }
+      h1 {
+        text-transform: uppercase;
+      }
+      .quote {
+        background-color: #efefef;
+        color: #121212;
+        text-align: justify;
+        border: 1px solid white;
+        box-shadow: 1px 1px 10px #efefef;
+        font-size: 1.2em;
+      }
+      .citation {
+        font-size: 0.5em;
+      }
+      .backgroundblue { background-color: rgb(26,115,186); }
+      .backgroundcolor { background-color: #702269; }
+      .backgroundgreen { background-color: rgb(17,170,88); }
+      .backgroundwhite { background-color: #FFF; }
+      .image {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+      .image img {
+        border-radius: 10px;
+        border: 1px solid #efefef;
+        max-width: 100%;
+        background-color: #fff;
+      }
+
+      .smaller img {
+        width: 75%;
+        height: 75%;
+      }
+      .larger img {
+        width: 200%;
+        height: 200%;
+      }
+
+      .image-smaller img {
+        border-radius: 10px;
+        border: 1px solid #efefef;
+        max-height: 400px;
+      }
+      .header {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+      }
+      .footnote {
+        position: absolute;
+        left: 5px;
+        bottom: 0px;
+      }
+      .footnote img {
+        max-width: 200px;
+      }
+      .dark-bg {
+        background:rgba(120,120,120,0.8);
+        padding: 10px;
+        margin: 0 9% 0 9%;
+        border-radius: 10px;
+      }
+      .mastodon-logo {
+        max-height: 1em;
+        vertical-align: middle;
+      }
+      ul {
+        list-style-type: none;
+      }
+
+      ul > li:before {
+        content: "–";
+        position: absolute;
+        margin-left: -1.1em;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({
+        ratio: '16:9',
+        sourceUrl: 'markdown.md.gen',
+        countIncrementalSlides: false,
+        highlightStyle: 'solarized-dark'
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+FROM alpine:3.9
+
+ADD sinatra_example.rb .
+
+RUN apk --no-cache add ruby ca-certificates ruby-full curl && \
+  gem install sinatra webrick --no-doc
+
+CMD ["ruby","sinatra_example.rb"]

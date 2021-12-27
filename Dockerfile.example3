@@ -1,0 +1,7 @@
+FROM alpine:3.9
+
+ADD Gemfile sinatra_example3.rb ./
+RUN apk --no-cache add ruby ca-certificates ruby-full curl && \
+  gem install sinatra --no-doc
+
+CMD ["ruby","sinatra_example3.rb"]
